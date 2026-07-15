@@ -19,6 +19,7 @@
     "drizzle-orm": "latest",
     "expo": "latest",
     "expo-constants": "latest",
+    "expo-crypto": "latest",
     "expo-font": "latest",
     "expo-linking": "latest",
     "expo-notifications": "latest",
