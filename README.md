@@ -4,6 +4,54 @@ Aplicativo mobile offline-first do ecossistema **Nosso Zelo** para organização
 
 O projeto começa como um aplicativo local, sem obrigatoriedade de conta ou internet. Em etapas posteriores, receberá backup online, sincronização, integração com o site Nosso Zelo e participação autorizada de cuidadores e profissionais de saúde.
 
+## Estado atual
+
+O bootstrap técnico do aplicativo já contém:
+
+- Expo, React Native e TypeScript;
+- navegação com Expo Router;
+- primeira tela do MVP;
+- tokens visuais derivados do Nosso Zelo;
+- modelos iniciais de pessoa, medicamento, horário e evento de dose;
+- schema SQLite inicial com Drizzle ORM;
+- estrutura preparada para notificações locais e sincronização futura.
+
+Os botões da tela inicial ainda são demonstrativos. O primeiro fluxo funcional será o cadastro local de pessoas.
+
+## Executar localmente
+
+Requisitos:
+
+- Node.js LTS;
+- npm;
+- Android Studio ou um aparelho Android com Expo Go;
+- Xcode para execução local no iOS, quando estiver em macOS.
+
+```bash
+git clone https://github.com/ChacaraKairo/re-medicamentos.git
+cd re-medicamentos
+git checkout feat/bootstrap-mobile
+npm install
+npm run start
+```
+
+Depois, escolha uma das opções exibidas pelo Expo:
+
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+Verificações locais:
+
+```bash
+npm run typecheck
+npm run lint
+```
+
+> O arquivo de lock deverá ser gerado e versionado após a primeira instalação validada das dependências.
+
 ## Objetivo atual
 
 Entregar um MVP mobile que permita:
@@ -17,7 +65,7 @@ Entregar um MVP mobile que permita:
 - exportar e importar backup local;
 - funcionar sem internet.
 
-## Stack planejada
+## Stack
 
 - React Native com Expo;
 - TypeScript;
