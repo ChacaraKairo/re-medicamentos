@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Nosso Zelo Medicamentos",
+    "slug": "re-medicamentos",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "remedicamentos",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "defaultChannel": "medicamentos",
+          "sounds": []
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "package": "br.com.nossozelo.remedicamentos",
+      "permissions": ["POST_NOTIFICATIONS", "SCHEDULE_EXACT_ALARM"]
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.nossozelo.remedicamentos",
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
